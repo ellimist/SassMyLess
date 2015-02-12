@@ -14,11 +14,11 @@ Install it yourself as:
 
 ## Usage
 
-    $ sassmyless ~/source/less_folder ~/source/sass_folder
+    $ sassmyless path_to_less_folder path_to_sass_folder
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/SassMyLess/fork )
+1. Fork it ( https://github.com/ellimist/SassMyLess/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
