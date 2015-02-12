@@ -29,6 +29,7 @@ module SassMyLess
           src = open(f).read.encode!('UTF-8')
           ConvertList.each do |regexp, with|
             src.gsub! /#{regexp}/, with
+            File.open(f, 'w') {|fh| fh.write(src) }
           end
           FileUtils.mv(f, f.gsub('.less', '.scss'))
         end
