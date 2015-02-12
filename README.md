@@ -2,7 +2,7 @@
 
 SassMyLess is a small utility that converts a folder containing LESS files to SCSS files
 
-# Disclaimer
+## Disclaimer
 
 Because of the way LESS and Sass work, it's not possible to make this process fully automatic, so it's likely that a bit of manual work might be required.
 
