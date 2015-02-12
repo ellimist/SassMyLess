@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require "sassmyless"
+
+if ARGV.size < 2
+  puts 'Syntax: sassmyless input_folder output_folder'
+  exit
+end
+
+less_directory = ARGV[0]
+sass_directory = ARGV[1]
+
+SassMyLess::Base.convert less_directory, sass_directory
