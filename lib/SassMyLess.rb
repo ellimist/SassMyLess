@@ -14,7 +14,7 @@ module SassMyLess
     def self.convert(input_dir, output_dir)
       input_path = File.expand_path("#{input_dir}")
       output_path = File.expand_path("#{output_dir}")
-      FileUtils.mkdir_p(input_path) unless Dir.exists?(output_path)
+      FileUtils.mkdir_p(output_path) unless Dir.exists?(output_path)
       FileUtils.cp_r "#{input_path}/.", "#{output_path}"
       self.traverse_dir output_path
     end
