@@ -26,7 +26,7 @@ module SassMyLess
     def self.traverse_dir directory
       Dir.glob("#{directory}/*").each_with_object({}) do |f, h|
         if File.file?(f)
-          src = open(f).read
+          src = open(f).read.encode!('UTF-8')
           ConvertList.each do |regexp, with|
             src.gsub! /#{regexp}/, with
           end
