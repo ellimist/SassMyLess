@@ -1,4 +1,5 @@
 require "SassMyLess/version"
+require 'fileutils'
 
 module SassMyLess
   class Base
